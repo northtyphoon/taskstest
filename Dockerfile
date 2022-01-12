@@ -1,5 +1,5 @@
-ARG BASE_IMAGE
+FROM alpine:latest
 
-FROM ${BASE_IMAGE}
+COPY . /src
 
-RUN ls /
+RUN ls -l /src
